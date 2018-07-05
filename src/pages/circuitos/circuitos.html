@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title style="text-align: center">Lista de circuitos</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let circuito of circuitos">
+    <div (click)="openPage(circuito.id)">
+      <img src="{{circuito.image}}"/>
+      <div class="card-title">{{circuito.circuito}}</div>
+      <div class="card-subtitle">{{circuito.pais}}</div>
+    </div>
+  </ion-card>
+</ion-content>

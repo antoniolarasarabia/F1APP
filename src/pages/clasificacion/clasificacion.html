@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title style="text-align: center">Mundial de pilotos</ion-title>
+    </ion-navbar>
+  </ion-header>
+<ion-content>
+  <div class="row header">
+    <div class="col">Posicion</div>
+    <div class="col">Piloto</div>
+    <div class="col">Escuderia</div>
+    <div class="col">Puntos</div>
+  </div>
+  <div class="row" *ngFor="let clasificacion of clasificacion">
+    <div class="col">{{clasificacion.posicion}}</div>
+    <div class="col">{{clasificacion.piloto}}</div>
+    <div class="col">{{clasificacion.escuderia}}</div>
+    <div class="col">{{clasificacion.puntos}}</div>
+  </div>
+</ion-content>

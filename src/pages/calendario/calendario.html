@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title style="text-align: center">Calendario</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+<div class="row header">
+  <div class="col">Circuito</div>
+  <div class="col">Pais</div>
+  <div class="col">Fecha</div>
+  <div class="col">Hora</div>
+</div>
+<div class="row" *ngFor="let circuitos of circuitos">
+  <div class="col">{{circuitos.circuito}}</div>
+  <div class="col">{{circuitos.pais}}</div>
+  <div class="col">{{circuitos.fecha}}</div>
+  <div class="col">{{circuitos.hora}}</div>
+</div>
+</ion-content>
